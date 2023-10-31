@@ -1,0 +1,85 @@
+.header{
+    display: flex;
+    align-items: flex-start;
+   justify-content: space-between;
+   max-width: 1356px;
+   padding: 10px 32px;
+   margin: 0 auto;
+
+   .header__nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 207px;
+
+    .header__nav-block{
+        display: flex;
+        flex-direction: column;
+        .f{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+    }
+   }
+}
+.container{
+    max-width: 1356px;
+    margin: 0 auto;}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+   
+
+        .container-1{
+            max-width: 640px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .img-sofa{
+                max-width: 330px;
+                margin-top: 295px;
+
+            }
+        }
+
+        .container-2{
+            margin-top: 300px;
+            .buy_project{
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 40px;
+                font-size: 18px;
+            }
+        }
+        /*new_container*/
+        .container-3{
+            max-width: 697px;
+        }
+
+        .container-4{
+            max-width: 649px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .container-5{
+            display: flex;
+            margin-top: 44px;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+       .gjme{
+        max-width: 562px;
+       }
+
+       .ee{
+        max-width: 678px;
+        .ww{
+            max-width: 300px;
+        }
+       }
+    }

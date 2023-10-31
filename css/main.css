@@ -1,0 +1,335 @@
+@charset "UTF-8";
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1356px;
+  padding: 10px 32px;
+  margin: 0 auto;
+}
+.header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 207px;
+}
+.header .header__nav .header__nav-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header .header__nav .header__nav-block .f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+
+.container {
+  max-width: 1356px;
+  margin: 0 auto;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 120px;
+  /*new_container*/
+}
+main .container-1 {
+  max-width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main .container-1 .img-sofa {
+  max-width: 330px;
+  margin-top: 295px;
+}
+main .container-2 {
+  margin-top: 300px;
+}
+main .container-2 .buy_project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+main .container-3 {
+  max-width: 697px;
+}
+main .container-4 {
+  max-width: 649px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+main .container-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 44px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+main .gjme {
+  max-width: 562px;
+}
+main .ee {
+  max-width: 678px;
+}
+main .ee .ww {
+  max-width: 300px;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* шрифты*/
+/*заголовок h1*/
+/*заголовок h2*/
+/*заголовок h3*/
+/*заголовок h4*/
+/*текст p*/
+/*текст span*/
+/* ЦВЕТА*/
+/* главный цвет*/
+/* задний фон*/
+/* акцентыный цвет*/
+/* цвета форм*/
+/* цвет ошибки*/
+/* цвет успешный */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*текст*/
+h1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*мобилка*/
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+/*кнопка*/
+.button {
+  cursor: pointer;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.25s all linear;
+  transition: 0.25s all linear;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-primary {
+  padding: 12px 20px;
+  background: #212529;
+  color: #ECECEC;
+  font-size: 16px;
+}
+.button-primary:hover {
+  background: #DDD7C0;
+  color: #212529;
+  -webkit-transition: 0.25s all linear;
+  transition: 0.25s all linear;
+}
+.button-primary:active {
+  background: #CBC6B2;
+  color: #212529;
+}
+.button-primary--disabled {
+  background: #212529;
+  color: #ECECEC;
+  opacity: 0.5;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+.button-secondary {
+  color: #212529;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+.button-secondary:hover {
+  color: #DDD7C0;
+}
+.button-secondary:active {
+  color: #CBC6B2;
+}
