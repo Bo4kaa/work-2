@@ -1,0 +1,28 @@
+.promo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    &__text {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        & h1 {
+            max-width: 794px;
+        }
+    }
+    &__img {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        &-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            & h4 {
+                max-width: 445px;
+            }
+
+        }
+    }
+}

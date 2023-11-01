@@ -1,0 +1,13 @@
+.advertise {
+  display: flex;
+  justify-content: space-between;
+  & h2 {
+    max-width: 562px;
+  }
+  &__description {
+    max-width: 679px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

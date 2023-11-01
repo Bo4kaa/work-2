@@ -106,6 +106,7 @@ span {
         color: v.$c-main;
         text-transform: uppercase;
         border-bottom: 1px solid;
+        transition: 0.25s all linear;
         cursor: pointer;
         &:hover {
             color: v.$c-accent;
@@ -116,3 +117,20 @@ span {
         }
     }
 }
+
+/* поля ввода*/
+input {
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    padding-bottom: 12px;
+    &::placeholder{
+        color: v.$c-main;
+        font-size: v.$fz-normal;
+    }
+    &:focus {
+        border-color: v.$c-accent;
+    }
+
+}
+

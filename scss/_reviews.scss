@@ -1,0 +1,28 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+    &__comments {
+      display: flex;
+      justify-content: space-between;
+      .reviews__comments-block{
+        max-width: 445px;
+        width: 100%;
+        border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .text {
+          gap: 20px;
+          padding: 20px;
+          max-width: 365px;
+          width: 100%;
+          display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
+      }
+    }
+}

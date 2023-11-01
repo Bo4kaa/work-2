@@ -1,0 +1,28 @@
+.algorithm {
+  display: flex;
+  justify-content: space-between;
+  & h2 {
+    max-width: 562px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    max-width: 678px;
+    gap: 30px;
+    & p {
+      max-width: 325px;
+    } 
+    &__paragraph {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .algorithm__paragraph_1 {
+      display: flex;
+      justify-content: space-between;
+      min-width: 678px;
+      border-bottom: 1px solid;
+      padding: 24px 0;
+    }
+  }
+}

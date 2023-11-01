@@ -1,0 +1,15 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__img {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(auto,1fr));
+    row-gap: 30px;
+    .imgg:hover {
+      opacity: 0.8;
+      
+    }
+  }
+  
+}
