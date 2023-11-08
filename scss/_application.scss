@@ -1,0 +1,25 @@
+.application {
+  display: flex;
+  justify-content: space-between;
+ &__order {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &-input {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  &-btn {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+ }
+}
