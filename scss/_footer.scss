@@ -4,7 +4,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  & h4 {
-    max-width: 209px;
-  }
+    &__aveji {
+      display: flex;
+      flex-direction: column;
+      max-width: 209px;
+      width: 100%;
+    }
+    &__social {
+      gap: 20px;
+      display: flex;
+    }
 }

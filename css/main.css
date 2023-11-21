@@ -104,7 +104,7 @@ main {
 /*заголовок h1*/
 /*заголовок h2*/
 /*заголовок h3*/
-/*заголовок h4*/
+/*заголовок h4,ссылки a*/
 /*текст p*/
 /*текст span*/
 /* ЦВЕТА*/
@@ -117,10 +117,12 @@ main {
 /*поставил курсок т.к без него почему то хуйня выскакивает*/
 a {
   cursor: pointer;
+  font-size: 18px;
 }
 
 * {
   font-family: "Montserrat", sans-serif;
+  padding: 5px;
 }
 
 /*текст*/
@@ -167,17 +169,6 @@ span {
 }
 
 /*мобилка*/
-@media screen and (max-width: 375px) {
-  h1 {
-    font-size: 32px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-}
 /*кнопка*/
 .button {
   cursor: pointer;
@@ -273,7 +264,6 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
   top: 0;
   max-width: 1440px;
   width: 100%;
@@ -405,7 +395,7 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 678px;
+  max-width: 678px;
   border-bottom: 1px solid;
   padding: 24px 0;
 }
@@ -420,18 +410,26 @@ input:focus {
           flex-direction: column;
   gap: 10px;
 }
+.project__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(auto, 1fr))[3];
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  row-gap: 20px;
+}
 .project__img {
-  background-image: url("../assets/img/project-img1.png");
-  width: 445px;
-  height: 580px;
+  max-width: 445px;
+  max-height: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 .project__img-link {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,11 +465,14 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .reviews__comments .reviews__comments-block {
+  gap: 32px;
+  padding: 40px;
   max-width: 445px;
   width: 100%;
   border: 2px solid;
@@ -508,4 +509,189 @@ input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.application {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.application__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 72px;
+}
+.application__form-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.application__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+.application__form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer {
+  margin-bottom: 15px;
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.footer__aveji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 209px;
+  width: 100%;
+}
+.footer__social {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1280px) {
+  .project__grid {
+    -ms-grid-columns: (minmax(auto, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    justify-items: center;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+@media (max-width: 1024px) {
+  .sofa {
+    max-width: 50%;
+  }
+  .reviews__comments .reviews__comments-block {
+    padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .sofa {
+    display: none;
+  }
+  .project__grid {
+    -ms-grid-columns: (minmax(auto, 1fr))[1];
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    justify-items: center;
+    display: -ms-grid;
+    display: grid;
+  }
+  .promo__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advertise {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .algorithm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviews__comments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .application {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+/*мобилка*/
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  a {
+    font-size: 16px;
+  }
 }

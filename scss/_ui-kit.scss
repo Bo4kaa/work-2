@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
+    padding: 5px;
 }
 
 /*текст*/
@@ -47,20 +48,24 @@ span {
     line-height: normal;
 }
 
+
+
+
+
 /*мобилка*/
-@media screen and (max-width:375px) {
-    h1 {
-        font-size: v.$fz-title-mob;
-    }
+// @media screen and (max-width:375px) {
+//     h1 {
+//         font-size: v.$fz-title-mob;
+//     }
 
-    h2{
-        font-size: v.$fz-heading-mob;
-    }
+//     h2{
+//         font-size: v.$fz-heading-mob;
+//     }
 
-    h3 {
-        font-size: v.$fz-subheading-mob;
-    }
-}
+//     h3 {
+//         font-size: v.$fz-subheading-mob;
+//     }
+// }
 
 /*кнопка*/
 .button{
@@ -73,6 +78,7 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    
     
     &-primary{
         padding: 12px 20px;

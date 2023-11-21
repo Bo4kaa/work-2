@@ -1,11 +1,11 @@
 .application {
   display: flex;
   justify-content: space-between;
- &__order {
+ &__form {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  &-text {
+  &-title {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -16,8 +16,7 @@
     gap: 18px;
   }
   &-btn {
-    max-width: 250px;
-    width: 100%;
+    
     display: flex;
     justify-content: space-between;
   }

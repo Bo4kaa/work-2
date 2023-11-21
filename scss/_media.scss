@@ -1,0 +1,97 @@
+@use 'variables' as v;
+
+@media(max-width:1280px) {
+ .project__grid {
+  grid-template-columns: repeat(2,minmax(auto,1fr));
+  justify-items: center;
+  display: grid;
+ }
+ 
+}
+
+@media(max-width:1024px){
+    .sofa {
+        max-width: 50%;
+    }
+    .reviews__comments{
+        .reviews__comments-block {
+            padding: 5px;
+        }
+    }
+   
+}
+
+@media(max-width:768px){
+    .sofa {
+        display: none;    
+    }
+
+    .project__grid {
+        grid-template-columns: repeat(1,minmax(auto,1fr));
+        justify-items: center;
+        display: grid;
+    }
+
+    .promo__text{
+        flex-direction: column;
+    }
+
+    .advertise {
+    flex-direction: column;
+    align-items: center;
+    }
+    .algorithm{
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .reviews__comments{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .application{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+       
+       
+}
+
+@media(max-width:640px) {
+    h1 {
+        font-size: v.$fz-title-mob;
+    }
+  
+    h2{
+        font-size: v.$fz-heading-mob;
+    }
+  
+    h3 {
+        font-size: v.$fz-subheading-mob;
+    }
+}
+
+/*мобилка*/
+@media screen and (max-width:375px) {
+  h1 {
+      font-size: v.$fz-title-mob;
+  }
+
+  h2{
+      font-size: v.$fz-heading-mob;
+  }
+
+  h3 {
+      font-size: v.$fz-subheading-mob;
+  }
+
+  a{
+    font-size: v.$fz-normal ;
+  }
+}

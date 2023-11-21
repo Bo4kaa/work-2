@@ -12,7 +12,7 @@ $fz-heading-mob: 28px;
 $fz-subheading: 36px;
 $fz-subheading-mob: 24px;
 
-/*заголовок h4*/
+/*заголовок h4,ссылки a*/
 $fz-large: 18px;
 
 /*текст p*/
@@ -45,4 +45,5 @@ $c-form-s: #F9C67B;
 /*поставил курсок т.к без него почему то хуйня выскакивает*/
 a{
     cursor: pointer;
+    font-size: $fz-large;
 }
