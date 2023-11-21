@@ -373,6 +373,7 @@ input:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 678px;
+  width: 100%;
   gap: 30px;
 }
 .algorithm__title p {
