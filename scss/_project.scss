@@ -10,7 +10,11 @@
     row-gap: 20px;
   }
   &__img {
-    // background-image: url('../assets/img/project-img1.png');
+    img {
+      padding: 0;
+      max-width: 100%;
+    }
+    padding: 0;
     max-width: 445px;
     max-height: 580px;
     display: flex;
@@ -24,7 +28,7 @@
       opacity: 0;
       width: 100%;
       color: v.$c-backgrounds;
-      padding: 22px 20px;
+      padding: 22px 20px 20px 20px;
       justify-content: space-between;
       align-items: center;
       transition: 0.2s all linear;

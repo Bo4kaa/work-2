@@ -419,6 +419,7 @@ input:focus {
   row-gap: 20px;
 }
 .project__img {
+  padding: 0;
   max-width: 445px;
   max-height: 580px;
   display: -webkit-box;
@@ -429,6 +430,10 @@ input:focus {
           align-items: flex-end;
   position: relative;
 }
+.project__img img {
+  padding: 0;
+  max-width: 100%;
+}
 .project__img-link {
   position: absolute;
   display: -webkit-box;
@@ -438,7 +443,7 @@ input:focus {
   opacity: 0;
   width: 100%;
   color: #ECECEC;
-  padding: 22px 20px;
+  padding: 22px 20px 20px 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -580,7 +585,7 @@ input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 209px;
+  max-width: 229px;
   width: 100%;
 }
 .footer__social {
@@ -600,6 +605,13 @@ input:focus {
   }
 }
 @media (max-width: 1024px) {
+  .project__grid {
+    -ms-grid-columns: (minmax(auto, 1fr))[1];
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+    justify-items: center;
+    display: -ms-grid;
+    display: grid;
+  }
   .sofa {
     max-width: 50%;
   }
@@ -660,6 +672,8 @@ input:focus {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+@media (max-width: 640px) {
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -669,8 +683,6 @@ input:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-}
-@media (max-width: 640px) {
   h1 {
     font-size: 32px;
   }
@@ -683,8 +695,41 @@ input:focus {
 }
 /*мобилка*/
 @media screen and (max-width: 375px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .algorithm__paragraph_1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   h1 {
-    font-size: 32px;
+    font-size: 25px;
   }
   h2 {
     font-size: 28px;
